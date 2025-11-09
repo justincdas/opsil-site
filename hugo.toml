@@ -1,0 +1,34 @@
+baseURL = 'https://opsil.in/'
+languageCode = 'en-us'
+title = 'OPSIL - Semiconductor Solutions'
+theme = 'PaperMod'
+
+[params]
+  description = "Leading semiconductor startup providing Edge IoT AI chips and custom silicon solutions using open-source tools"
+  author = "OPSIL"
+  
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  
+  [[menu.main]]
+    name = "Products"
+    url = "/products/"
+    weight = 2
+  
+  [[menu.main]]
+    name = "Custom Silicon"
+    url = "/custom-silicon/"
+    weight = 3
+  
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+  
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 5
