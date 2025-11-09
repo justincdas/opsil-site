@@ -1,5 +1,5 @@
 ---
-title: "OPSIL 💡"
+title: "OPSIL - Semiconductor Innovation"
 ---
 
 # Welcome to OPSIL
