@@ -1,34 +1,95 @@
 baseURL = 'https://opsil.in/'
 languageCode = 'en-us'
-title = 'OPSIL - Semiconductor Solutions'
+title = 'OPSIL 💡'
 theme = 'PaperMod'
 
+# Enable emoji support
+enableEmoji = true
+
+# Enable robots.txt
+enableRobotsTXT = true
+
+# Build configuration
+[build]
+  writeStats = true
+
+# The Val Kashanam ----------------------------------------------------- 
 [params]
-  description = "Leading semiconductor startup providing Edge IoT AI chips and custom silicon solutions using open-source tools"
+  env = "production"
+  description = "Indian semiconductor startup providing Edge IoT AI chips , IP and custom silicon solutions"
   author = "OPSIL"
   
-[menu]
-  [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
+  # Theme mode
+  defaultTheme = "auto" # auto, light, dark
+  disableThemeToggle = false
   
-  [[menu.main]]
-    name = "Products"
-    url = "/products/"
-    weight = 2
+  [params.homeInfoParams]
+    Title = "OPSIL Technologies India Pvt Ltd"
+    Content = """
+    Indian semiconductor startup delivering innovative solutions in 
+    Edge IoT AI 
+    Custom Silicon Design and
+    Silicon IPs
+    
+    🚀 Cutting-edge technology | 🔧 Open-source tools | 💡 Innovation-driven
+    """
+
+  # Social icons
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/company/opsil"
   
-  [[menu.main]]
-    name = "Custom Silicon"
-    url = "/custom-silicon/"
-    weight = 3
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/opsil"
   
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 4
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/opsil"
   
-  [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 5
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:info@opsil.in"
+#----------------------------------------------------------------------
+
+# Main menu
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Products"
+  url = "/products/"
+  weight = 2
+
+[[menu.main]]
+  name = "Custom Silicon"
+  url = "/custom-silicon/"
+  weight = 3
+
+[[menu.main]]
+  name = "IPs"
+  url = "/Ips/"
+  weight = 4
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 5
+
+[[menu.main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 6
+
+# Taxonomies
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# Markup settings
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = true
